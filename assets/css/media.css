@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@media (min-width: 576px) and (max-width: 768px){
+    header{
+        height: 5em;
+    }
+    nav{
+        display: none;
+    }
+    #principal{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #principal p{
+        font-size: 1.3em;
+    }
+    #icons{
+        font-size: 1.5em;
+    }
+    #foto{
+        width: 20.75em;
+        height: 20.75em;
+        margin-bottom: -150px;
+    }
+    #sobre-mim{
+        flex-direction: column;
+    }
+    #text-sobre{
+        height: 30em;
+        font-size: 1.2em;
+        margin-bottom: -10em;
+    }
+    #table table td{
+        border: 5px solid #600606;
+    }
+    footer{
+        gap: 3.5em;
+    }
+    footer h2{
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+    footer #outros{
+        gap: 1em;
+    }
+    footer #political{
+        font-size: 1em;
+        width: 50em;
+    }
+    footer #footer-icons i{
+        margin-left: 1.2em;
+    }
+}

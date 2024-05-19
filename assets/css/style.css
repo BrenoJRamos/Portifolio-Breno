@@ -1,0 +1,395 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+:root{
+    /*--corp: #883bd6;*/
+    --corp: #F20505;
+    --back: #020202;
+    --red2: #8C0808;
+    --red3: linear-gradient(to left, pink, black);
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: rgb(141, 138, 138);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--corp);
+    border-radius: 2px;
+}
+span{
+    color: var(--corp)
+}
+#background{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--back);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 5.63em;
+
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20em; 
+    background-color: var(--back); 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+}
+header > h2{
+    font-size: 2.5em;
+    color: var(--corp)
+}
+header > nav > ul > li{
+    display: inline;
+    margin: 2em;
+}
+header > nav > ul > li > a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    padding-bottom: 3px;
+}
+header > nav > ul > li > a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: var(--corp);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+header > nav > ul > li > a:hover::after{
+    width: 100%;
+}
+header > nav > ul > input{
+    padding: 8px;
+    border: 2px solid var(--corp);
+    border-radius: 15px;
+    width: 12.5em;
+    font-size: 1.06em;
+    color: var(--corp);
+    background-color: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+header > nav > ul{
+    padding: 1.87em;
+}
+header > nav > ul > input:hover{
+    background-color: var(--corp);
+    color: white;
+    box-shadow: 1px 1px 30px #F20505;
+}
+main#principal{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 6.25em;
+    margin-top: -6.25em;
+    padding-left: 9.37em;
+    gap: 12.5em;
+}
+main#foto{
+    width: 28.75em;
+    height: 28.75em;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid var(--corp);
+    background-image: url('/assets/imagens/anime1.jpg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 30px #F20505;
+}
+main > aside{
+    width: 30em;
+}
+main > aside p:nth-child(1){
+    font-weight: bold;
+}
+main > aside > p{
+    color: white;
+}
+p#texto{
+    line-height: 1.5em;
+}
+p#web-dev{
+    font-size: 1.875em;
+    margin-bottom: 0.625em;
+    font-weight: bold;
+}
+main > aside > h1{
+    font-size: 2.5em;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+    color: white;
+}
+div#icons{
+    color: var(--corp);
+    display: flex;
+    gap: 0.8em;
+    margin-top: 0.625em;
+    font-size: 1.8em;
+    padding: 1.25em;
+    margin-bottom: -1.25em;
+}
+#principal div > i{
+    cursor: pointer;
+    transition-duration: .5s;
+    border: 3px solid var(--corp);
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+i#face:hover{
+    color: black;
+    transform: translateY(-10px);
+    background-color: var(--corp);
+}
+i#hub:hover{
+    color: black;
+    transform: translateY(-10px);
+    background-color: var(--corp);
+}
+i#insta:hover{
+    color: black;
+    transform: translateY(-10px);
+    background-color: var(--corp);
+}
+i#red:hover{
+    color: black;
+    transform: translateY(-10px);
+    background-color: var(--corp);
+}
+i#zap:hover{
+    color: black;
+    transform: translateY(-10px);
+    background-color: var(--corp);
+}
+main > aside > #b-sobre > input{
+    margin-top: 10px;
+    padding: 10px;
+    width: 12.5em;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--corp);
+    border-radius: 15px;
+    background-color: transparent;
+    border: 2px solid var(--corp);
+    cursor: pointer;
+    transition-duration: .5s;
+}
+#b-sobre{
+    padding: 1.875em;
+}
+main > aside > #b-sobre > input:hover{
+    background-color: var(--corp);
+    color: white;
+    box-shadow: 1px 1px 30px #F20505;
+
+}
+
+/*2*/
+#sobre-mim{
+    display: flex;
+    justify-content: center;
+    gap: 12.5em;
+    align-items: center;
+    border-top: 4px solid var(--corp);
+    padding: 20px;
+    background-color: var(--back);
+    color: white;
+    flex-direction: row-reverse;
+    width: 100vw;
+}
+#text-sobre h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3.125em;
+    padding: 10px;
+    color: rgb(141, 138, 138);
+}
+#text-sobre {
+    width: 25em;
+    font-size: 20px;
+    border: 5px solid var(--corp);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    text-indent: 15px;
+    transition-duration: .5s;
+}
+#text-sobre p{
+    line-height: 25px;
+}
+#img-sobre img{
+    width: 21.25em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 50px var(--corp);
+}
+#text-sobre:hover{
+    box-shadow: 1px 1px 50px var(--corp);
+}
+#img-sobre{
+    padding: 3.125em;
+}
+
+/*3*/
+#table h1{
+    text-align: center;
+    color: rgb(141, 138, 138);
+    font-size: 3.125em;
+}
+#table p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+}
+#table{
+    padding-top: 1.875em;
+    padding-bottom: 4.375em;
+    background-color: var(--back);
+    border-top: 4px solid var(--corp);
+    width: 100vw;
+}
+#table img{
+    width: 3.75em;
+}
+#table table{
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px;
+}
+#table table tr:first-child td:first-child{
+
+}
+#table table td{
+    border-left: 20px solid #600606;
+    border-right: 20px solid #600606;
+    border-top: 30px solid #600606;
+    border-bottom: 30px solid #600606;
+    padding: 10px 20px 10px 20px;
+    transition-duration: .2s;
+
+}
+
+#table table td:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    background-color: rgb(141, 138, 138);
+    color: black;
+}
+
+#span-animate{
+    position: relative;
+}
+
+#span-animate::before{
+    content: "Web Developer";
+    animation: words 40s infinite;
+}
+
+#span-animate::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: var(--back);
+    border-left: 4px solid white;
+    right: -8px;
+    animation: cursor .8s infinite, typing 40s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 4px solid var(--back);
+    }
+}
+
+@keyframes words{
+    to{
+        content: "Web Developer"
+    }
+}
+
+@keyframes typing{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 8px);
+    }
+}
+
+/*4*/
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 9.375em;
+    align-items: center;
+    justify-content: center;
+    gap: 37.5em;
+    background-color: var(--red2);
+    border-top: 4px solid var(--corp);
+    width: 100vw;
+}
+
+footer h2{
+    font-size: 1.875em;
+}
+
+footer #outros{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer #political a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    margin-left: 15px;
+}
+
+footer #political a:hover{
+    color: var(--corp);
+}
+
+footer #footer-icons{
+    text-align: center;
+    font-size: 1.875em;
+}
+
+footer #footer-icons i{
+    margin-left: 1.875em;
+    transition-duration: .5s;
+}
+
+#footer-icons i:hover{
+    cursor: pointer;
+    color: var(--corp)
+}
+
+footer #direitos{
+    text-align: center;
+}
