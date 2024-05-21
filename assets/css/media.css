@@ -2,7 +2,7 @@
 
 @media (min-width: 576px) and (max-width: 768px){
     header{
-        height: 5em;
+        height: 4em;
     }
     nav{
         display: none;
@@ -12,23 +12,30 @@
         justify-content: center;
     }
     #principal p{
-        font-size: 1.3em;
+        font-size: 1em;
     }
-    #icons{
+    #principal h1{
         font-size: 1.5em;
     }
-    #foto{
-        width: 20.75em;
-        height: 20.75em;
-        margin-bottom: -150px;
+    
+    #icons i{
+        font-size: 0.8em;
     }
+ 
     #sobre-mim{
         flex-direction: column;
     }
+    #sobre-mim h1{
+        font-size: 2em;
+    }
     #text-sobre{
-        height: 30em;
-        font-size: 1.2em;
+        height: 40em;
+        width: 20em;
+        font-size: 1em;
         margin-bottom: -10em;
+    }
+    #img-sobre img{
+        width: 15em;
     }
     #table table td{
         border: 5px solid #600606;

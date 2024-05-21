@@ -32,7 +32,7 @@ span{
     height: 100vh;
     background-color: var(--back);
     background-size: cover;
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
     padding-top: 5.63em;
 
@@ -107,18 +107,20 @@ main#principal{
     margin-top: -6.25em;
     padding-left: 9.37em;
     gap: 12.5em;
+    justify-content: center;
 }
-main#foto{
+#textos{
+    height: content;
+}
+main#foto img{
     width: 28.75em;
     height: 28.75em;
-    background-color: white;
     border-radius: 50%;
     border: 5px solid var(--corp);
-    background-image: url('/assets/imagens/anime1.jpg');
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
     box-shadow: 1px 1px 30px #F20505;
+}
+main#foto{
+    padding: 30px;
 }
 main > aside{
     width: 30em;
