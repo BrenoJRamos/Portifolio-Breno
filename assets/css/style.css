@@ -109,9 +109,6 @@ main#principal{
     gap: 12.5em;
     justify-content: center;
 }
-#textos{
-    height: content;
-}
 main#foto img{
     width: 28.75em;
     height: 28.75em;
