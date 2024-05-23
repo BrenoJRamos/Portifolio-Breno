@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 500px) and (max-width: 768px){
     header{
         height: 5em;
     }
@@ -42,6 +42,7 @@
     }
     #table table td{
         border: 5px solid #600606;
+        padding: 10px;
     }
     footer{
         gap: 2em;
