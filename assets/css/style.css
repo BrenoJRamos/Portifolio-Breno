@@ -224,7 +224,7 @@ main > aside > #b-sobre > input:hover{
     margin-bottom: 20px;
     font-size: 3.125em;
     padding: 10px;
-    color: rgb(141, 138, 138);
+    color: rgb(255, 255, 255);
 }
 #text-sobre {
     width: 25em;
@@ -253,7 +253,7 @@ main > aside > #b-sobre > input:hover{
 /*3*/
 #table h1{
     text-align: center;
-    color: rgb(141, 138, 138);
+    color: rgb(255, 255, 255);
     font-size: 3.125em;
 }
 #table p{
